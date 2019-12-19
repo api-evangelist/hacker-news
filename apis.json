@@ -1,0 +1,59 @@
+{
+    "name": "Hacker News",
+    "description": "<p>Hacker News is a social news website focusing on computer science and entrepreneurship. It is run by Paul Graham's investment fund and startup incubator, Y Combinator.<\/p>",
+    "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/logos\/hn-246x0w.jpg",
+    "tags": [
+        "bookmarks",
+        "curation",
+        "general data",
+        "have api",
+        "links"
+    ],
+    "created": "2019-12-19",
+    "modified": "2019-12-19",
+    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/hacker-news\/master\/apis.json",
+    "specificationVersion": "0.14",
+    "apis": [
+        {
+            "name": "Hacker News",
+            "description": null,
+            "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/logos\/hn-246x0w.jpg",
+            "humanURL": "https:\/\/news.ycombinator.com\/",
+            "baseURL": "",
+            "tags": [],
+            "properties": [
+                {
+                    "type": "x-openapi",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/hacker-news-openapi.json"
+                },
+                {
+                    "type": "x-openapi",
+                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/hacker-news.json"
+                },
+                {
+                    "type": "x-postman-collecction",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/hacker-news-postman-collection.json"
+                }
+            ]
+        }
+    ],
+    "include": [],
+    "x-common": [
+        {
+            "type": "Twitter",
+            "url": "https:\/\/twitter.com\/newsycombinator"
+        },
+        {
+            "type": "Developers",
+            "url": "https:\/\/github.com\/HackerNews\/API"
+        },
+        {
+            "type": "Github",
+            "url": "https:\/\/github.com\/HackerNews"
+        },
+        {
+            "type": "Website",
+            "url": "https:\/\/news.ycombinator.com\/"
+        }
+    ]
+}
