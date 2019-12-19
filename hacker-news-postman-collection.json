@@ -1,0 +1,144 @@
+{
+    "id": "3621805d35466a455ca7f0b97a2e7ca5",
+    "name": "Hacker News",
+    "description": null,
+    "auth": null,
+    "events": null,
+    "variables": [],
+    "order": [],
+    "folders_order": [],
+    "folders": [],
+    "requests": [
+        {
+            "id": "4a6658008d5d25da0c70f78a6efa83dc",
+            "name": "Get the changed items and profiles",
+            "url": "httpshacker-news.firebaseio.com\/v0\/updates.json",
+            "description": "Get the changed items and profiles",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "3621805d35466a455ca7f0b97a2e7ca5",
+            "rawModeData": ""
+        },
+        {
+            "id": "241d3ec338e802b7e39d1da93da742bd",
+            "name": "Returns the current top 100 stories.",
+            "url": "httpshacker-news.firebaseio.com\/v0\/topstories.json",
+            "description": "Returns the current top 100 stories.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "3621805d35466a455ca7f0b97a2e7ca5",
+            "rawModeData": ""
+        },
+        {
+            "id": "d84aff9a94f097635d2a080b24d6b83e",
+            "name": "Users are identified by case-sensitive ids",
+            "url": "httpshacker-news.firebaseio.com\/v0\/user\/{id}.json",
+            "description": "Users are identified by case-sensitive ids",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "id",
+                    "description": "User ID",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "3621805d35466a455ca7f0b97a2e7ca5",
+            "rawModeData": ""
+        },
+        {
+            "id": "0887290de4e22bbfaae172f4d7ec2a1b",
+            "name": "Get the current largest item id",
+            "url": "httpshacker-news.firebaseio.com\/v0\/maxitem.json",
+            "description": "Get the current largest item id",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "3621805d35466a455ca7f0b97a2e7ca5",
+            "rawModeData": ""
+        },
+        {
+            "id": "177650a6cb3de02d8bb2796d1c04c22a",
+            "name": "Get the Item (story, comment, jobs, Ask HN, etc)",
+            "url": "httpshacker-news.firebaseio.com\/v0\/item\/{id}.json",
+            "description": "Stories, comments, jobs, Ask HNs and even polls are just items. They're identified by their ids, which are unique integers.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "id",
+                    "description": "User ID",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "3621805d35466a455ca7f0b97a2e7ca5",
+            "rawModeData": ""
+        }
+    ]
+}
