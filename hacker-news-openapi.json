@@ -1,0 +1,166 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "version": "",
+        "title": "Hacker News",
+        "description": "<p>Hacker News API<\/p>\n",
+        "termsOfService": ""
+    },
+    "servers": [
+        "httpshacker-news.firebaseio.com\/v0"
+    ],
+    "paths": {
+        "\/updates.json": {
+            "get": {
+                "summary": "Get the changed items and profiles",
+                "description": "Get the changed items and profiles",
+                "operationId": "Get",
+                "deprecated": 0,
+                "parameters": []
+            }
+        },
+        "\/topstories.json": {
+            "get": {
+                "summary": "Returns the current top 100 stories.",
+                "description": "Returns the current top 100 stories.",
+                "operationId": "GetTopStories",
+                "deprecated": 0,
+                "parameters": []
+            }
+        },
+        "\/user\/{id}.json": {
+            "get": {
+                "summary": "Users are identified by case-sensitive ids",
+                "description": "Users are identified by case-sensitive ids",
+                "operationId": "GetUser",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "User ID"
+                    }
+                ]
+            }
+        },
+        "\/maxitem.json": {
+            "get": {
+                "summary": "Get the current largest item id",
+                "description": "Get the current largest item id",
+                "operationId": "GetMaxItem",
+                "deprecated": 0,
+                "parameters": []
+            }
+        },
+        "\/item\/{id}.json": {
+            "get": {
+                "summary": "Get the Item (story, comment, jobs, Ask HN, etc)",
+                "description": "Stories, comments, jobs, Ask HNs and even polls are just items. They're identified by their ids, which are unique integers.",
+                "operationId": "GetItem",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "User ID"
+                    }
+                ]
+            }
+        }
+    },
+    "components": {
+        "schemas": {
+            "Updates": {
+                "type": "object",
+                "properties": {
+                    "items": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "profiles": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "Item": {
+                "type": "object",
+                "properties": {
+                    "by": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "id": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "kids": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "parent": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "parts": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "score": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "text": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "time": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "title": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "type": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "url": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "User": {
+                "type": "object",
+                "properties": {
+                    "about": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "created": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "delay": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "id": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "karma": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "submitted": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            }
+        }
+    }
+}
