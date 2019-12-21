@@ -1,5 +1,5 @@
 {
-    "id": "3621805d35466a455ca7f0b97a2e7ca5",
+    "id": "3390b12edd8c97a8415619ee2f9cb6e4",
     "name": "Hacker News",
     "description": null,
     "auth": null,
@@ -10,7 +10,7 @@
     "folders": [],
     "requests": [
         {
-            "id": "4a6658008d5d25da0c70f78a6efa83dc",
+            "id": "2fd86e051808ba5949756b43d5b2f053",
             "name": "Get the changed items and profiles",
             "url": "httpshacker-news.firebaseio.com\/v0\/updates.json",
             "description": "Get the changed items and profiles",
@@ -29,11 +29,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "3621805d35466a455ca7f0b97a2e7ca5",
+            "collectionId": "3390b12edd8c97a8415619ee2f9cb6e4",
             "rawModeData": ""
         },
         {
-            "id": "241d3ec338e802b7e39d1da93da742bd",
+            "id": "e22eb7c3e9de59b6dc4df7b2790a80e2",
             "name": "Returns the current top 100 stories.",
             "url": "httpshacker-news.firebaseio.com\/v0\/topstories.json",
             "description": "Returns the current top 100 stories.",
@@ -52,11 +52,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "3621805d35466a455ca7f0b97a2e7ca5",
+            "collectionId": "3390b12edd8c97a8415619ee2f9cb6e4",
             "rawModeData": ""
         },
         {
-            "id": "d84aff9a94f097635d2a080b24d6b83e",
+            "id": "a84a2be47d6236f40e2eed879e453a9b",
             "name": "Users are identified by case-sensitive ids",
             "url": "httpshacker-news.firebaseio.com\/v0\/user\/{id}.json",
             "description": "Users are identified by case-sensitive ids",
@@ -83,11 +83,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "3621805d35466a455ca7f0b97a2e7ca5",
+            "collectionId": "3390b12edd8c97a8415619ee2f9cb6e4",
             "rawModeData": ""
         },
         {
-            "id": "0887290de4e22bbfaae172f4d7ec2a1b",
+            "id": "0a8a3bb5d0e0dd8538d28b4859346295",
             "name": "Get the current largest item id",
             "url": "httpshacker-news.firebaseio.com\/v0\/maxitem.json",
             "description": "Get the current largest item id",
@@ -106,11 +106,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "3621805d35466a455ca7f0b97a2e7ca5",
+            "collectionId": "3390b12edd8c97a8415619ee2f9cb6e4",
             "rawModeData": ""
         },
         {
-            "id": "177650a6cb3de02d8bb2796d1c04c22a",
+            "id": "8586d1fa45c63d4187ba3593cd24bc10",
             "name": "Get the Item (story, comment, jobs, Ask HN, etc)",
             "url": "httpshacker-news.firebaseio.com\/v0\/item\/{id}.json",
             "description": "Stories, comments, jobs, Ask HNs and even polls are just items. They're identified by their ids, which are unique integers.",
@@ -137,7 +137,7 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "3621805d35466a455ca7f0b97a2e7ca5",
+            "collectionId": "3390b12edd8c97a8415619ee2f9cb6e4",
             "rawModeData": ""
         }
     ]
