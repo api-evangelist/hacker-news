@@ -1,15 +1,13 @@
 aid: hacker-news
-url: 
-  https://raw.githubusercontent.com/api-evangelist/hacker-news/refs/heads/main/apis.yml
+url: https://raw.githubusercontent.com/api-evangelist/hacker-news/refs/heads/main/apis.yml
 apis:
   - aid: hacker-news:hacker-news-api
     name: Hacker News API
     tags:
+      - Comments
       - News
       - Stories
-      - Comments
-    image: 
-      https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     baseURL: https://hacker-news.firebaseio.com
     humanURL: https://github.com/HackerNews/API
     properties:
@@ -28,8 +26,7 @@ tags:
   - Technology News
   - Y Combinator
 type: Index
-image: 
-  https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
 access: 3rd-Party
 common:
   - url: https://news.ycombinator.com/
