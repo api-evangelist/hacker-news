@@ -1,0 +1,19 @@
+aid: hacker-news
+name: Hacker News API Rules
+description: >-
+  Governance and operational rules for the Hacker News API published by
+  Y Combinator and hosted on Firebase. The API is read-only and unauthenticated.
+specificationVersion: '0.1'
+rules:
+  - name: read-only
+    description: All endpoints are HTTP GET; mutation is not supported.
+  - name: no-auth
+    description: No API key, OAuth, or token is required.
+  - name: rate-limits
+    description: No published rate limit; clients should be courteous and use Firebase eventing where possible.
+  - name: forward-compatibility
+    description: Clients must ignore unknown fields returned by item or user objects.
+  - name: data-source
+    description: Backed by Firebase real-time database; endpoints expose JSON over HTTPS.
+  - name: stable-base-url
+    description: All endpoints live under https://hacker-news.firebaseio.com/v0/.

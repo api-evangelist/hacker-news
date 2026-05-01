@@ -1,12 +1,12 @@
 # Hacker News (hacker-news)
 
-Hacker News (https://news.ycombinator.com/) is Y Combinator's technology news aggregation and discussion platform, focused on content that satisfies intellectual curiosity — particularly around startups, programming, and science. It is one of the most widely read developer communities on the internet, and provides a public API backed by Firebase that gives developers real-time read access to its full dataset of stories, comments, jobs, polls, and user profiles.
+Hacker News (https://news.ycombinator.com/) is Y Combinator's technology news aggregation and discussion platform, focused on content that satisfies intellectual curiosity, particularly around startups, programming, and science. It is one of the most widely read developer communities on the internet, and provides a public API backed by Firebase that gives developers real-time read access to its full dataset of stories, comments, jobs, polls, and user profiles.
 
 **URL:** [https://raw.githubusercontent.com/api-evangelist/hacker-news/refs/heads/main/apis.yml](https://raw.githubusercontent.com/api-evangelist/hacker-news/refs/heads/main/apis.yml)
 
 ## Scope
 
-- **Type:** Contract
+- **Type:** Index
 - **Position:** Consuming
 - **Access:** 3rd-Party
 
@@ -17,7 +17,7 @@ Hacker News (https://news.ycombinator.com/) is Y Combinator's technology news ag
 ## Timestamps
 
 - **Created:** 2026-03-24
-- **Modified:** 2026-03-24
+- **Modified:** 2026-04-28
 
 ## APIs
 
@@ -27,6 +27,7 @@ The Hacker News API provides access to items (stories, comments, jobs, Ask HNs, 
 
 **Human URL:** [https://github.com/HackerNews/API](https://github.com/HackerNews/API)
 
+**Base URL:** `https://hacker-news.firebaseio.com`
 
 #### Tags:
 
@@ -35,6 +36,8 @@ The Hacker News API provides access to items (stories, comments, jobs, Ask HNs, 
 #### Properties
 
 - [Documentation](https://github.com/HackerNews/API)
+- [OpenAPI](https://raw.githubusercontent.com/api-evangelist/hacker-news/refs/heads/main/openapi/hacker-news-openapi.yml)
+- [Rules](https://raw.githubusercontent.com/api-evangelist/hacker-news/refs/heads/main/hacker-news-rules.yml)
 
 ## Common Properties
 
@@ -51,6 +54,6 @@ The Hacker News API provides access to items (stories, comments, jobs, Ask HNs, 
 
 ## Maintainers
 
-**FN:** API Evangelist
+**FN:** Kin Lane
 
-**Email:** info@apievangelist.com
+**Email:** kin@apievangelist.com
