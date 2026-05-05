@@ -1,0 +1,13 @@
+{
+  "repo": "hacker-news",
+  "feeds": [
+    {
+      "source": "https://news.ycombinator.com/rss",
+      "feed_url": "https://news.ycombinator.com/rss",
+      "saved": 10,
+      "title": "Hacker News"
+    }
+  ],
+  "post_count": 10,
+  "fetched": "2026-05-03T23:29:10Z"
+}
