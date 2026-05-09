@@ -4,10 +4,10 @@
     {
       "source": "https://news.ycombinator.com/rss",
       "feed_url": "https://news.ycombinator.com/rss",
-      "saved": 10,
-      "title": "Hacker News"
+      "title": "Hacker News",
+      "saved": 30
     }
   ],
-  "post_count": 10,
-  "fetched": "2026-05-03T23:29:10Z"
+  "post_count": 40,
+  "fetched": "2026-05-09T20:17:51Z"
 }
