@@ -1,0 +1,77 @@
+naftiko: 1.0.0-alpha2
+info:
+  label: Hacker News API — Items
+  description: 'Hacker News API — Items. 1 operations. Lead operation: Get item by ID. Self-contained Naftiko capability covering
+    one Hacker News business surface.'
+  tags:
+  - Hacker News
+  - Items
+  created: '2026-05-19'
+  modified: '2026-05-19'
+binds:
+- namespace: env
+  keys:
+    HACKER_NEWS_API_KEY: HACKER_NEWS_API_KEY
+capability:
+  consumes:
+  - type: http
+    namespace: hacker-news-items
+    baseUri: https://hacker-news.firebaseio.com/v0
+    description: Hacker News API — Items business capability. Self-contained, no shared references.
+    resources:
+    - name: item-id}.json
+      path: /item/{id}.json
+      operations:
+      - name: getitem
+        method: GET
+        description: Get item by ID
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: id
+          in: path
+          type: integer
+          description: Numeric item ID.
+          required: true
+  exposes:
+  - type: rest
+    namespace: hacker-news-items-rest
+    port: 8080
+    description: REST adapter for Hacker News API — Items. One Spectral-compliant resource per consumed operation, prefixed
+      with /v1.
+    resources:
+    - path: /v1/item/id-json
+      name: item-id-json
+      description: REST surface for item-id}.json.
+      operations:
+      - method: GET
+        name: getitem
+        description: Get item by ID
+        call: hacker-news-items.getitem
+        with:
+          id: rest.id
+        outputParameters:
+        - type: object
+          mapping: $.
+  - type: mcp
+    namespace: hacker-news-items-mcp
+    port: 9090
+    transport: http
+    description: MCP adapter for Hacker News API — Items. One tool per consumed operation, routed inline through this capability's
+      consumes block.
+    tools:
+    - name: get-item-id
+      description: Get item by ID
+      hints:
+        readOnly: true
+        destructive: false
+        idempotent: true
+      call: hacker-news-items.getitem
+      with:
+        id: tools.id
+      outputParameters:
+      - type: object
+        mapping: $.
