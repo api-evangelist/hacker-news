@@ -1,23 +1,24 @@
 # Hacker News (hacker-news)
 
-Hacker News (https://news.ycombinator.com/) is Y Combinator's technology news aggregation and discussion platform, focused on content that satisfies intellectual curiosity, particularly around startups, programming, and science. It is one of the most widely read developer communities on the internet, and provides a public API backed by Firebase that gives developers real-time read access to its full dataset of stories, comments, jobs, polls, and user profiles.
+Hacker News is Y Combinator's technology news aggregation and discussion platform. It exposes a public, read-only Firebase-backed API that gives developers real-time access to stories, comments, jobs, polls, and user profiles across the full HN dataset.
 
-**URL:** [https://raw.githubusercontent.com/api-evangelist/hacker-news/refs/heads/main/apis.yml](https://raw.githubusercontent.com/api-evangelist/hacker-news/refs/heads/main/apis.yml)
+**APIs.json:** [https://raw.githubusercontent.com/api-evangelist/hacker-news/refs/heads/main/apis.yml](https://raw.githubusercontent.com/api-evangelist/hacker-news/refs/heads/main/apis.yml)
 
 ## Scope
 
 - **Type:** Index
-- **Position:** Consuming
 - **Access:** 3rd-Party
 
-## Tags:
+## Tags
 
- - Developer Community, Technology News, Y Combinator
+- Developer Community
+- Technology News
+- Y Combinator
 
 ## Timestamps
 
 - **Created:** 2026-03-24
-- **Modified:** 2026-04-28
+- **Modified:** 2026-05-19
 
 ## APIs
 
@@ -25,29 +26,32 @@ Hacker News (https://news.ycombinator.com/) is Y Combinator's technology news ag
 
 The Hacker News API provides access to items (stories, comments, jobs, Ask HNs, polls), users, and live data via Firebase endpoints. It is a public, read-only REST API that exposes the full dataset of Hacker News content in near real-time. Developers can retrieve individual items by ID, look up user profiles, and subscribe to live feeds of new, top, best, ask, show, and job stories. The API requires no authentication and returns JSON data from Firebase's real-time database infrastructure.
 
-**Human URL:** [https://github.com/HackerNews/API](https://github.com/HackerNews/API)
+- **Human URL:** [https://github.com/HackerNews/API](https://github.com/HackerNews/API)
+- **Base URL:** `https://hacker-news.firebaseio.com`
 
-**Base URL:** `https://hacker-news.firebaseio.com`
+#### Tags
 
-#### Tags:
-
- - News, Stories, Comments
+- Comments
+- News
+- Stories
 
 #### Properties
 
 - [Documentation](https://github.com/HackerNews/API)
-- [OpenAPI](https://raw.githubusercontent.com/api-evangelist/hacker-news/refs/heads/main/openapi/hacker-news-openapi.yml)
+- [OpenAPI](https://raw.githubusercontent.com/api-evangelist/hacker-news/refs/heads/main/openapi/hacker-news-openapi.yml) — [OpenAPI Specification](https://spec.openapis.org/oas/latest.html)
 - [Rules](https://raw.githubusercontent.com/api-evangelist/hacker-news/refs/heads/main/hacker-news-rules.yml)
+- [Postman Collection](collections/hacker-news.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
+- [Open Collection](collections/hacker-news.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
 
 ## Common Properties
 
 - [Website](https://news.ycombinator.com/)
 - [Documentation](https://github.com/HackerNews/API)
 - [Guidelines](https://news.ycombinator.com/newsguidelines.html)
-- [TermsOfService](https://news.ycombinator.com/legal)
+- [Terms of Service](https://news.ycombinator.com/legal)
 - [Security](https://news.ycombinator.com/security.html)
 - [Portal](https://news.ycombinator.com/lists)
-- [RSS](https://news.ycombinator.com/rss)
+- [R S S](https://news.ycombinator.com/rss)
 - [Forum](https://news.ycombinator.com/ask)
 - [Showcase](https://news.ycombinator.com/show)
 - [About](https://www.ycombinator.com/)
@@ -55,5 +59,4 @@ The Hacker News API provides access to items (stories, comments, jobs, Ask HNs, 
 ## Maintainers
 
 **FN:** Kin Lane
-
 **Email:** kin@apievangelist.com

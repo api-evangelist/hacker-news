@@ -1,0 +1,168 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Hacker News API",
+    "version": "v0"
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Items",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Get item by ID",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://hacker-news.firebaseio.com/v0/item/:id.json",
+            "params": [
+              {
+                "name": "id",
+                "value": "",
+                "type": "path",
+                "description": "Numeric item ID."
+              }
+            ]
+          },
+          "docs": "Returns a story, comment, job, Ask HN, poll, or pollopt by its ID."
+        }
+      ]
+    },
+    {
+      "info": {
+        "name": "Users",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Get user profile",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://hacker-news.firebaseio.com/v0/user/:username.json",
+            "params": [
+              {
+                "name": "username",
+                "value": "",
+                "type": "path",
+                "description": "Case-sensitive HN username."
+              }
+            ]
+          },
+          "docs": "Returns a Hacker News user profile by case-sensitive username."
+        }
+      ]
+    },
+    {
+      "info": {
+        "name": "Live",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Get max item ID",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://hacker-news.firebaseio.com/v0/maxitem.json"
+          },
+          "docs": "Returns the current largest item ID."
+        },
+        {
+          "info": {
+            "name": "Get changed items and profiles",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://hacker-news.firebaseio.com/v0/updates.json"
+          },
+          "docs": "Returns items and user profiles that have recently changed."
+        }
+      ]
+    },
+    {
+      "info": {
+        "name": "Lists",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Get top stories",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://hacker-news.firebaseio.com/v0/topstories.json"
+          },
+          "docs": "Up to 500 top story IDs."
+        },
+        {
+          "info": {
+            "name": "Get new stories",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://hacker-news.firebaseio.com/v0/newstories.json"
+          },
+          "docs": "Up to 500 newest story IDs."
+        },
+        {
+          "info": {
+            "name": "Get best stories",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://hacker-news.firebaseio.com/v0/beststories.json"
+          },
+          "docs": "Up to 500 best story IDs."
+        },
+        {
+          "info": {
+            "name": "Get latest Ask HN stories",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://hacker-news.firebaseio.com/v0/askstories.json"
+          },
+          "docs": "Up to 200 latest Ask HN story IDs."
+        },
+        {
+          "info": {
+            "name": "Get latest Show HN stories",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://hacker-news.firebaseio.com/v0/showstories.json"
+          },
+          "docs": "Up to 200 latest Show HN story IDs."
+        },
+        {
+          "info": {
+            "name": "Get latest job stories",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://hacker-news.firebaseio.com/v0/jobstories.json"
+          },
+          "docs": "Up to 200 latest job story IDs."
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}
