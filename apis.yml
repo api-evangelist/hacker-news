@@ -5,7 +5,7 @@ description: >-
   Firebase-backed API that gives developers real-time access to stories, comments, jobs, polls, and user profiles across
   the full HN dataset.
 type: Index
-image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
 url: https://raw.githubusercontent.com/api-evangelist/hacker-news/refs/heads/main/apis.yml
 access: 3rd-Party
 tags:
@@ -24,7 +24,7 @@ apis:
       near real-time. Developers can retrieve individual items by ID, look up user profiles, and subscribe to live feeds
       of new, top, best, ask, show, and job stories. The API requires no authentication and returns JSON data from
       Firebase's real-time database infrastructure.
-    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
     humanURL: https://github.com/HackerNews/API
     baseURL: https://hacker-news.firebaseio.com
     tags:
