@@ -62,7 +62,7 @@ common:
     type: RSS
   - url: https://news.ycombinator.com/ask
     name: Ask HN
-    type: Forum
+    type: Forums
   - url: https://news.ycombinator.com/show
     name: Show HN
     type: Showcase
