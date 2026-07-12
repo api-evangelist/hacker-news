@@ -39,6 +39,8 @@ apis:
       - type: Rules
         url: https://raw.githubusercontent.com/api-evangelist/hacker-news/refs/heads/main/hacker-news-rules.yml
 common:
+  - type: DomainSecurity
+    url: security/hacker-news-domain-security.yml
   - url: https://news.ycombinator.com/
     name: Hacker News Website
     type: Website

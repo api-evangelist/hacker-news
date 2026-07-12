@@ -1,0 +1,26 @@
+generated: '2026-07-11'
+method: probed
+source: live DNS/TLS/HTTP probes of apis.yml + OpenAPI hosts
+hosts:
+- host: news.ycombinator.com
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Aug 15 08:05:33 2026 GMT
+  hsts: null
+- host: hacker-news.firebaseio.com
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Oct  4 15:01:46 2026 GMT
+  hsts: null
+domains:
+- domain: ycombinator.com
+  dnssec: false
+  caa: []
+  spf: true
+  dmarc: true
+  dmarc_policy: none
+- domain: firebaseio.com
+  dnssec: false
+  caa: []
+  spf: true
+  dmarc: false
