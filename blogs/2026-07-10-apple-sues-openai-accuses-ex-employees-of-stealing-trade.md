@@ -1,0 +1,7 @@
+---
+title: "Apple sues OpenAI, accuses ex-employees of stealing trade secrets"
+url: "https://9to5mac.com/2026/07/10/apple-sues-openai-trade-secret-theft/"
+date: "2026-07-10"
+feed_url: "https://news.ycombinator.com/rss"
+---
+Comments
