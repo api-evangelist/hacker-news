@@ -1,0 +1,87 @@
+openapi: 3.0.3
+info:
+  title: Hacker News Items API
+  description: The official Hacker News API provides read-only access to items (stories, comments, jobs, Ask HNs, polls), users, and live data via Firebase. No authentication is required.
+  version: v0
+  contact:
+    name: Hacker News
+    url: https://github.com/HackerNews/API
+  license:
+    name: MIT
+    url: https://github.com/HackerNews/API/blob/master/LICENSE
+servers:
+- url: https://hacker-news.firebaseio.com/v0
+  description: Production Firebase endpoint
+tags:
+- name: Items
+  description: Stories, comments, jobs, Ask HNs, polls, and pollopts.
+paths:
+  /item/{id}.json:
+    get:
+      summary: Get item by ID
+      description: Returns a story, comment, job, Ask HN, poll, or pollopt by its ID.
+      operationId: getItem
+      tags:
+      - Items
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: Numeric item ID.
+        schema:
+          type: integer
+      responses:
+        '200':
+          description: Item object
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Item'
+components:
+  schemas:
+    Item:
+      type: object
+      properties:
+        id:
+          type: integer
+          description: The unique item id.
+        deleted:
+          type: boolean
+        type:
+          type: string
+          enum:
+          - job
+          - story
+          - comment
+          - poll
+          - pollopt
+        by:
+          type: string
+          description: The username of the item author.
+        time:
+          type: integer
+          description: Unix timestamp of creation.
+        text:
+          type: string
+        dead:
+          type: boolean
+        parent:
+          type: integer
+        poll:
+          type: integer
+        kids:
+          type: array
+          items:
+            type: integer
+        url:
+          type: string
+        score:
+          type: integer
+        title:
+          type: string
+        parts:
+          type: array
+          items:
+            type: integer
+        descendants:
+          type: integer

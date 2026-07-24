@@ -1,0 +1,60 @@
+openapi: 3.0.3
+info:
+  title: Hacker News Items Users API
+  description: The official Hacker News API provides read-only access to items (stories, comments, jobs, Ask HNs, polls), users, and live data via Firebase. No authentication is required.
+  version: v0
+  contact:
+    name: Hacker News
+    url: https://github.com/HackerNews/API
+  license:
+    name: MIT
+    url: https://github.com/HackerNews/API/blob/master/LICENSE
+servers:
+- url: https://hacker-news.firebaseio.com/v0
+  description: Production Firebase endpoint
+tags:
+- name: Users
+  description: User profiles.
+paths:
+  /user/{username}.json:
+    get:
+      summary: Get user profile
+      description: Returns a Hacker News user profile by case-sensitive username.
+      operationId: getUser
+      tags:
+      - Users
+      parameters:
+      - name: username
+        in: path
+        required: true
+        description: Case-sensitive HN username.
+        schema:
+          type: string
+      responses:
+        '200':
+          description: User object
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/User'
+components:
+  schemas:
+    User:
+      type: object
+      properties:
+        id:
+          type: string
+          description: Case-sensitive user id.
+        delay:
+          type: integer
+        created:
+          type: integer
+          description: Unix timestamp of account creation.
+        karma:
+          type: integer
+        about:
+          type: string
+        submitted:
+          type: array
+          items:
+            type: integer

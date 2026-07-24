@@ -1,0 +1,114 @@
+openapi: 3.0.3
+info:
+  title: Hacker News Items Lists API
+  description: The official Hacker News API provides read-only access to items (stories, comments, jobs, Ask HNs, polls), users, and live data via Firebase. No authentication is required.
+  version: v0
+  contact:
+    name: Hacker News
+    url: https://github.com/HackerNews/API
+  license:
+    name: MIT
+    url: https://github.com/HackerNews/API/blob/master/LICENSE
+servers:
+- url: https://hacker-news.firebaseio.com/v0
+  description: Production Firebase endpoint
+tags:
+- name: Lists
+  description: Top, new, best, ask, show, and job story lists.
+paths:
+  /topstories.json:
+    get:
+      summary: Get top stories
+      description: Up to 500 top story IDs.
+      operationId: getTopStories
+      tags:
+      - Lists
+      responses:
+        '200':
+          description: Array of story IDs
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: integer
+  /newstories.json:
+    get:
+      summary: Get new stories
+      description: Up to 500 newest story IDs.
+      operationId: getNewStories
+      tags:
+      - Lists
+      responses:
+        '200':
+          description: Array of story IDs
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: integer
+  /beststories.json:
+    get:
+      summary: Get best stories
+      description: Up to 500 best story IDs.
+      operationId: getBestStories
+      tags:
+      - Lists
+      responses:
+        '200':
+          description: Array of story IDs
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: integer
+  /askstories.json:
+    get:
+      summary: Get latest Ask HN stories
+      description: Up to 200 latest Ask HN story IDs.
+      operationId: getAskStories
+      tags:
+      - Lists
+      responses:
+        '200':
+          description: Array of story IDs
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: integer
+  /showstories.json:
+    get:
+      summary: Get latest Show HN stories
+      description: Up to 200 latest Show HN story IDs.
+      operationId: getShowStories
+      tags:
+      - Lists
+      responses:
+        '200':
+          description: Array of story IDs
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: integer
+  /jobstories.json:
+    get:
+      summary: Get latest job stories
+      description: Up to 200 latest job story IDs.
+      operationId: getJobStories
+      tags:
+      - Lists
+      responses:
+        '200':
+          description: Array of story IDs
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: integer
