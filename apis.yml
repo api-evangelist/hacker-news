@@ -5,7 +5,19 @@ description: >-
   Firebase-backed API that gives developers real-time access to stories, comments, jobs, polls, and user profiles across
   the full HN dataset.
 type: Index
-image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+accessModel:
+  pricing: freemium
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Freemium
+  confidence: medium
+  source:
+  - plans
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/hacker-news.png
 url: https://raw.githubusercontent.com/api-evangelist/hacker-news/refs/heads/main/apis.yml
 access: 3rd-Party
 tags:
@@ -16,28 +28,66 @@ created: '2026-03-24'
 modified: '2026-05-19'
 specificationVersion: '0.19'
 apis:
-  - aid: hacker-news:hacker-news-api
-    name: Hacker News API
-    description: >-
-      The Hacker News API provides access to items (stories, comments, jobs, Ask HNs, polls), users, and live data via
-      Firebase endpoints. It is a public, read-only REST API that exposes the full dataset of Hacker News content in
-      near real-time. Developers can retrieve individual items by ID, look up user profiles, and subscribe to live feeds
-      of new, top, best, ask, show, and job stories. The API requires no authentication and returns JSON data from
-      Firebase's real-time database infrastructure.
-    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
-    humanURL: https://github.com/HackerNews/API
-    baseURL: https://hacker-news.firebaseio.com
-    tags:
-      - Comments
-      - News
-      - Stories
-    properties:
-      - type: Documentation
-        url: https://github.com/HackerNews/API
-      - type: OpenAPI
-        url: https://raw.githubusercontent.com/api-evangelist/hacker-news/refs/heads/main/openapi/hacker-news-openapi.yml
-      - type: Rules
-        url: https://raw.githubusercontent.com/api-evangelist/hacker-news/refs/heads/main/hacker-news-rules.yml
+- aid: hacker-news:hacker-news-items-api
+  name: Hacker News Items API
+  description: Stories, comments, jobs, Ask HNs, polls, and pollopts.
+  humanURL: https://github.com/HackerNews/API
+  baseURL: https://hacker-news.firebaseio.com
+  tags:
+  - Items
+  properties:
+  - type: OpenAPI
+    url: openapi/hacker-news-items-api-openapi.yml
+  - type: Documentation
+    url: https://github.com/HackerNews/API
+  - type: Rules
+    url: >-
+      https://raw.githubusercontent.com/api-evangelist/hacker-news/refs/heads/main/hacker-news-rules.yml
+- aid: hacker-news:hacker-news-lists-api
+  name: Hacker News Lists API
+  description: Top, new, best, ask, show, and job story lists.
+  humanURL: https://github.com/HackerNews/API
+  baseURL: https://hacker-news.firebaseio.com
+  tags:
+  - Lists
+  properties:
+  - type: OpenAPI
+    url: openapi/hacker-news-lists-api-openapi.yml
+  - type: Documentation
+    url: https://github.com/HackerNews/API
+  - type: Rules
+    url: >-
+      https://raw.githubusercontent.com/api-evangelist/hacker-news/refs/heads/main/hacker-news-rules.yml
+- aid: hacker-news:hacker-news-live-api
+  name: Hacker News Live API
+  description: Max item ID and recent updates.
+  humanURL: https://github.com/HackerNews/API
+  baseURL: https://hacker-news.firebaseio.com
+  tags:
+  - Live
+  properties:
+  - type: OpenAPI
+    url: openapi/hacker-news-live-api-openapi.yml
+  - type: Documentation
+    url: https://github.com/HackerNews/API
+  - type: Rules
+    url: >-
+      https://raw.githubusercontent.com/api-evangelist/hacker-news/refs/heads/main/hacker-news-rules.yml
+- aid: hacker-news:hacker-news-users-api
+  name: Hacker News Users API
+  description: User profiles.
+  humanURL: https://github.com/HackerNews/API
+  baseURL: https://hacker-news.firebaseio.com
+  tags:
+  - Users
+  properties:
+  - type: OpenAPI
+    url: openapi/hacker-news-users-api-openapi.yml
+  - type: Documentation
+    url: https://github.com/HackerNews/API
+  - type: Rules
+    url: >-
+      https://raw.githubusercontent.com/api-evangelist/hacker-news/refs/heads/main/hacker-news-rules.yml
 common:
   - type: AgenticAccess
     url: agentic-access/hacker-news-agentic-access.yml
