@@ -1,0 +1,20 @@
+{
+  "provider": "hacker-news",
+  "sources": [
+    "hacker-news-items-api-openapi.yml",
+    "hacker-news-lists-api-openapi.yml",
+    "hacker-news-live-api-openapi.yml",
+    "hacker-news-users-api-openapi.yml"
+  ],
+  "outputs": [
+    "hacker-news-items-api-openapi.yml",
+    "hacker-news-lists-api-openapi.yml",
+    "hacker-news-live-api-openapi.yml",
+    "hacker-news-users-api-openapi.yml"
+  ],
+  "archived": [],
+  "errors": [],
+  "warnings": [],
+  "notes": [],
+  "skipped": []
+}

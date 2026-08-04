@@ -1,0 +1,7 @@
+---
+title: "UK AISI / Caisi Preliminary Assessment of Kimi K3's Cyber Capabilities"
+url: "https://www.nist.gov/news-events/news/2026/07/uk-aisi-caisi-preliminary-assessment-kimi-k3s-cyber-capabilities"
+date: "2026-07-25"
+feed_url: "https://news.ycombinator.com/rss"
+---
+Comments

@@ -5,10 +5,10 @@
       "source": "https://news.ycombinator.com/rss",
       "feed_url": "https://news.ycombinator.com/rss",
       "title": "",
-      "saved": 0,
+      "saved": 1,
       "method": "feed"
     }
   ],
-  "post_count": 253,
-  "fetched": "2026-07-11T11:50:51Z"
+  "post_count": 348,
+  "fetched": "2026-08-01T15:49:00Z"
 }
