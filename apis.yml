@@ -26,7 +26,7 @@ tags:
   - Y Combinator
 created: '2026-03-24'
 modified: '2026-05-19'
-specificationVersion: '0.19'
+specificationVersion: '0.23'
 apis:
 - aid: hacker-news:hacker-news-items-api
   name: Hacker News Items API
