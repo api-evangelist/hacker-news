@@ -1,0 +1,40 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Hacker News Items Live API",
+    "version": "v0"
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Live",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Get max item ID",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://hacker-news.firebaseio.com/v0/maxitem.json"
+          },
+          "docs": "Returns the current largest item ID."
+        },
+        {
+          "info": {
+            "name": "Get changed items and profiles",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://hacker-news.firebaseio.com/v0/updates.json"
+          },
+          "docs": "Returns items and user profiles that have recently changed."
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

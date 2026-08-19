@@ -1,0 +1,114 @@
+{
+  "item": [
+    {
+      "id": "03701417-84d5-444f-969e-a335c477fff8",
+      "name": "Users",
+      "description": {
+        "content": "User profiles.",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "b7880252-6d9a-4909-bb4e-8b95f742e7de",
+          "name": "Get user profile",
+          "request": {
+            "name": "Get user profile",
+            "description": {
+              "content": "Returns a Hacker News user profile by case-sensitive username.",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "user",
+                "{{username}}.json"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "3131db8c-2834-4c04-909f-4cbc8bf73dbb",
+              "name": "User object",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "user",
+                    "{{username}}.json"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"id\": \"string\",\n  \"delay\": 6793,\n  \"created\": 8533,\n  \"karma\": 9957,\n  \"about\": \"string\",\n  \"submitted\": [\n    7776,\n    6478\n  ]\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "https://hacker-news.firebaseio.com/v0",
+      "key": "baseUrl"
+    },
+    {
+      "disabled": false,
+      "description": {
+        "content": "(Required) Case-sensitive HN username.",
+        "type": "text/plain"
+      },
+      "type": "any",
+      "value": "<string>",
+      "key": "username"
+    }
+  ],
+  "info": {
+    "_postman_id": "5a80d562-fcca-44b0-8802-88b34f2a3477",
+    "name": "Hacker News Items Users API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "The official Hacker News API provides read-only access to items (stories, comments, jobs, Ask HNs, polls), users, and live data via Firebase. No authentication is required.\n\nContact Support:\n Name: Hacker News",
+      "type": "text/plain"
+    }
+  }
+}

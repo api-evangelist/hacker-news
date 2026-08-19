@@ -1,0 +1,452 @@
+{
+  "item": [
+    {
+      "id": "48726d29-00ce-48dd-ae22-003a4b2cee3a",
+      "name": "Lists",
+      "description": {
+        "content": "Top, new, best, ask, show, and job story lists.",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "0983ff8f-9fe3-4912-8f04-5daafe807ca7",
+          "name": "Get top stories",
+          "request": {
+            "name": "Get top stories",
+            "description": {
+              "content": "Up to 500 top story IDs.",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "topstories.json"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "0173e179-0ede-4ba8-85f6-f78f798eca44",
+              "name": "Array of story IDs",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "topstories.json"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "[\n  1331,\n  2399\n]",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "fab48cb9-e42c-4944-8ba7-e64b3c6aa916",
+          "name": "Get new stories",
+          "request": {
+            "name": "Get new stories",
+            "description": {
+              "content": "Up to 500 newest story IDs.",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "newstories.json"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "6a9a5d7e-a64c-40db-95ce-f274a2c6c189",
+              "name": "Array of story IDs",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "newstories.json"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "[\n  1331,\n  2399\n]",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "808765d0-2491-43bd-a038-64f6258017d5",
+          "name": "Get best stories",
+          "request": {
+            "name": "Get best stories",
+            "description": {
+              "content": "Up to 500 best story IDs.",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "beststories.json"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "2742ac31-c402-4b0e-a21b-c799660ec410",
+              "name": "Array of story IDs",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "beststories.json"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "[\n  1331,\n  2399\n]",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "77f90d32-1747-4988-9745-6aa75dedd408",
+          "name": "Get latest Ask HN stories",
+          "request": {
+            "name": "Get latest Ask HN stories",
+            "description": {
+              "content": "Up to 200 latest Ask HN story IDs.",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "askstories.json"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "c714d85b-c693-40ac-9d7d-82d2f3f04fa3",
+              "name": "Array of story IDs",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "askstories.json"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "[\n  1331,\n  2399\n]",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "c56cf255-4a78-4925-bd0c-6228888718d3",
+          "name": "Get latest Show HN stories",
+          "request": {
+            "name": "Get latest Show HN stories",
+            "description": {
+              "content": "Up to 200 latest Show HN story IDs.",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "showstories.json"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "92e57c65-6693-475e-8ab4-4a06f93a554f",
+              "name": "Array of story IDs",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "showstories.json"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "[\n  1331,\n  2399\n]",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "04be230a-a00b-4da9-87ca-25d246534321",
+          "name": "Get latest job stories",
+          "request": {
+            "name": "Get latest job stories",
+            "description": {
+              "content": "Up to 200 latest job story IDs.",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "jobstories.json"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "4bae22d7-873d-4c8f-953c-d81a2c81d798",
+              "name": "Array of story IDs",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "jobstories.json"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "[\n  1331,\n  2399\n]",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "https://hacker-news.firebaseio.com/v0",
+      "key": "baseUrl"
+    }
+  ],
+  "info": {
+    "_postman_id": "1c581496-705c-4037-b91f-828287451562",
+    "name": "Hacker News Items Lists API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "The official Hacker News API provides read-only access to items (stories, comments, jobs, Ask HNs, polls), users, and live data via Firebase. No authentication is required.\n\nContact Support:\n Name: Hacker News",
+      "type": "text/plain"
+    }
+  }
+}

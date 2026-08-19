@@ -1,0 +1,172 @@
+{
+  "item": [
+    {
+      "id": "08269439-a28a-41ed-b2f6-fb2a4a4bbab8",
+      "name": "Live",
+      "description": {
+        "content": "Max item ID and recent updates.",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "b1495c69-09f8-4567-8b78-e7b0fbfb7207",
+          "name": "Get max item ID",
+          "request": {
+            "name": "Get max item ID",
+            "description": {
+              "content": "Returns the current largest item ID.",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "maxitem.json"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "9197da94-ee46-47ed-8ef5-1f2cdaf083a0",
+              "name": "Latest item ID",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "maxitem.json"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "5626",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "39287835-5155-43dd-bada-b6c71a40d5a5",
+          "name": "Get changed items and profiles",
+          "request": {
+            "name": "Get changed items and profiles",
+            "description": {
+              "content": "Returns items and user profiles that have recently changed.",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "updates.json"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "95c8c6db-0dab-477f-a545-faac050efedc",
+              "name": "Updates payload",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "updates.json"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"items\": [\n    7899,\n    3627\n  ],\n  \"profiles\": [\n    \"string\",\n    \"string\"\n  ]\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "https://hacker-news.firebaseio.com/v0",
+      "key": "baseUrl"
+    }
+  ],
+  "info": {
+    "_postman_id": "e876953d-88fe-484a-9c23-bb18f04181c2",
+    "name": "Hacker News Items Live API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "The official Hacker News API provides read-only access to items (stories, comments, jobs, Ask HNs, polls), users, and live data via Firebase. No authentication is required.\n\nContact Support:\n Name: Hacker News",
+      "type": "text/plain"
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Hacker News Items API",
+    "version": "v0"
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Items",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Get item by ID",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://hacker-news.firebaseio.com/v0/item/:id.json",
+            "params": [
+              {
+                "name": "id",
+                "value": "",
+                "type": "path",
+                "description": "Numeric item ID."
+              }
+            ]
+          },
+          "docs": "Returns a story, comment, job, Ask HN, poll, or pollopt by its ID."
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

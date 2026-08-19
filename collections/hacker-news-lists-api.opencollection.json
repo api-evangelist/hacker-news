@@ -1,0 +1,84 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Hacker News Items Lists API",
+    "version": "v0"
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Lists",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Get top stories",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://hacker-news.firebaseio.com/v0/topstories.json"
+          },
+          "docs": "Up to 500 top story IDs."
+        },
+        {
+          "info": {
+            "name": "Get new stories",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://hacker-news.firebaseio.com/v0/newstories.json"
+          },
+          "docs": "Up to 500 newest story IDs."
+        },
+        {
+          "info": {
+            "name": "Get best stories",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://hacker-news.firebaseio.com/v0/beststories.json"
+          },
+          "docs": "Up to 500 best story IDs."
+        },
+        {
+          "info": {
+            "name": "Get latest Ask HN stories",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://hacker-news.firebaseio.com/v0/askstories.json"
+          },
+          "docs": "Up to 200 latest Ask HN story IDs."
+        },
+        {
+          "info": {
+            "name": "Get latest Show HN stories",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://hacker-news.firebaseio.com/v0/showstories.json"
+          },
+          "docs": "Up to 200 latest Show HN story IDs."
+        },
+        {
+          "info": {
+            "name": "Get latest job stories",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://hacker-news.firebaseio.com/v0/jobstories.json"
+          },
+          "docs": "Up to 200 latest job story IDs."
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

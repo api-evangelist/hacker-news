@@ -1,0 +1,114 @@
+{
+  "item": [
+    {
+      "id": "6fd5d274-49e9-47f0-b32c-46590fbeab7e",
+      "name": "Items",
+      "description": {
+        "content": "Stories, comments, jobs, Ask HNs, polls, and pollopts.",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "b0a36afa-db79-4415-9125-ab72c57d1345",
+          "name": "Get item by ID",
+          "request": {
+            "name": "Get item by ID",
+            "description": {
+              "content": "Returns a story, comment, job, Ask HN, poll, or pollopt by its ID.",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "item",
+                "{{id}}.json"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "6ffea4e5-ed02-4b5f-983f-2a5cc58f0287",
+              "name": "Item object",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "item",
+                    "{{id}}.json"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"id\": 229,\n  \"deleted\": true,\n  \"type\": \"poll\",\n  \"by\": \"string\",\n  \"time\": 3638,\n  \"text\": \"string\",\n  \"dead\": false,\n  \"parent\": 9575,\n  \"poll\": 8838,\n  \"kids\": [\n    2062,\n    2131\n  ],\n  \"url\": \"string\",\n  \"score\": 5674,\n  \"title\": \"string\",\n  \"parts\": [\n    2240,\n    9768\n  ],\n  \"descendants\": 9176\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "https://hacker-news.firebaseio.com/v0",
+      "key": "baseUrl"
+    },
+    {
+      "disabled": false,
+      "description": {
+        "content": "(Required) Numeric item ID.",
+        "type": "text/plain"
+      },
+      "type": "any",
+      "value": "<integer>",
+      "key": "id"
+    }
+  ],
+  "info": {
+    "_postman_id": "eab336e7-e00f-4b9c-96e3-b942d1e53b52",
+    "name": "Hacker News Items API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "The official Hacker News API provides read-only access to items (stories, comments, jobs, Ask HNs, polls), users, and live data via Firebase. No authentication is required.\n\nContact Support:\n Name: Hacker News",
+      "type": "text/plain"
+    }
+  }
+}
