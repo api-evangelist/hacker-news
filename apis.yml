@@ -34,6 +34,8 @@ apis:
   humanURL: https://github.com/HackerNews/API
   baseURL: https://hacker-news.firebaseio.com
   tags:
+  - Item
+  tags_raw:
   - Items
   properties:
   - type: OpenAPI
@@ -49,6 +51,8 @@ apis:
   humanURL: https://github.com/HackerNews/API
   baseURL: https://hacker-news.firebaseio.com
   tags:
+  - List
+  tags_raw:
   - Lists
   properties:
   - type: OpenAPI
@@ -79,6 +83,8 @@ apis:
   humanURL: https://github.com/HackerNews/API
   baseURL: https://hacker-news.firebaseio.com
   tags:
+  - User
+  tags_raw:
   - Users
   properties:
   - type: OpenAPI
