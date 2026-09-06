@@ -107,6 +107,8 @@ apis:
     url: >-
       https://raw.githubusercontent.com/api-evangelist/hacker-news/refs/heads/main/hacker-news-rules.yml
 common:
+  - type: PublicAPIsListing
+    url: https://github.com/public-apis/public-apis
   - type: AgenticAccess
     url: agentic-access/hacker-news-agentic-access.yml
   - type: DomainSecurity
