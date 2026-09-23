@@ -1,6 +1,6 @@
 openapi: 3.2.0
 info:
-  title: Hacker News Items Users API
+  title: Hacker News Users API
   description: The official Hacker News API provides read-only access to items (stories, comments, jobs, Ask HNs, polls), users, and live data via Firebase. No authentication is required.
   version: v0
   contact:

@@ -1,10 +1,7 @@
 {
   "provider": "hacker-news",
   "sources": [
-    "hacker-news-items-api-openapi.yml",
-    "hacker-news-lists-api-openapi.yml",
-    "hacker-news-live-api-openapi.yml",
-    "hacker-news-users-api-openapi.yml"
+    "_original/hacker-news-openapi.yml"
   ],
   "outputs": [
     "hacker-news-items-api-openapi.yml",
@@ -16,11 +13,14 @@
   "errors": [],
   "warnings": [],
   "notes": [
-    "hacker-news-items-api-openapi.yml: upgraded openapi 3.0.3 -> OpenAPI 3.2.0",
-    "hacker-news-lists-api-openapi.yml: upgraded openapi 3.0.3 -> OpenAPI 3.2.0",
-    "hacker-news-live-api-openapi.yml: upgraded openapi 3.0.3 -> OpenAPI 3.2.0",
-    "hacker-news-users-api-openapi.yml: upgraded openapi 3.0.3 -> OpenAPI 3.2.0",
+    "sourced from openapi/_original/ (1 archived document(s)); previously refined output at the top level was skipped rather than re-split",
+    "hacker-news-openapi.yml: upgraded openapi 3.0.3 -> OpenAPI 3.2.0",
     "apis.yml register: already-registered"
   ],
-  "skipped": []
+  "skipped": [
+    "hacker-news-items-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "hacker-news-lists-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "hacker-news-live-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "hacker-news-users-api-openapi.yml: previously refined output, superseded by openapi/_original/"
+  ]
 }
