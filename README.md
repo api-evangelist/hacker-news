@@ -1,4 +1,4 @@
-# Hacker News (hacker-news)
+# Hacker News
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -66,61 +66,121 @@
 
 Hacker News is Y Combinator's technology news aggregation and discussion platform. It exposes a public, read-only Firebase-backed API that gives developers real-time access to stories, comments, jobs, polls, and user profiles across the full HN dataset.
 
-**APIs.json:** [https://raw.githubusercontent.com/api-evangelist/hacker-news/refs/heads/main/apis.yml](https://raw.githubusercontent.com/api-evangelist/hacker-news/refs/heads/main/apis.yml)
+**Areas:** Developer Community · Technology News · Y Combinator
 
-## Scope
+## Hacker News on APIs.io
 
-- **Type:** Index
-- **Access:** 3rd-Party
+Everything profiled for Hacker News is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/hacker-news/](https://apis.io/providers/hacker-news/)** — or go straight to one of the APIs or properties below.
 
-## Tags
+### APIs (4)
 
-- Developer Community
-- Technology News
-- Y Combinator
+- [Hacker News Items API](https://apis.io/apis/hacker-news/hacker-news-items-api/) — Stories, comments, jobs, Ask HNs, polls, and pollopts.
+- [Hacker News Lists API](https://apis.io/apis/hacker-news/hacker-news-lists-api/) — Top, new, best, ask, show, and job story lists.
+- [Hacker News Live API](https://apis.io/apis/hacker-news/hacker-news-live-api/) — Max item ID and recent updates.
+- [Hacker News Users API](https://apis.io/apis/hacker-news/hacker-news-users-api/) — User profiles.
 
-## Timestamps
+### Published properties
 
-- **Created:** 2026-03-24
-- **Modified:** 2026-05-19
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-## APIs
+#### Agentic access (1)
 
-### Hacker News API
+Which operations an agent can call, which act, and which need a human in the loop.
 
-The Hacker News API provides access to items (stories, comments, jobs, Ask HNs, polls), users, and live data via Firebase endpoints. It is a public, read-only REST API that exposes the full dataset of Hacker News content in near real-time. Developers can retrieve individual items by ID, look up user profiles, and subscribe to live feeds of new, top, best, ask, show, and job stories. The API requires no authentication and returns JSON data from Firebase's real-time database infrastructure.
+- [Hacker News Agentic Access](https://apis.io/agentic-access/hacker-news/hacker-news-agentic-access/)
 
-- **Human URL:** [https://github.com/HackerNews/API](https://github.com/HackerNews/API)
-- **Base URL:** `https://hacker-news.firebaseio.com`
+#### Collections (5)
 
-#### Tags
+Postman and Open Collection request collections.
 
-- Comments
-- News
-- Stories
+- [Hacker News API](https://apis.io/collections/hacker-news/open-hacker-news/)
+- [Hacker News Items API](https://apis.io/collections/hacker-news/open-hacker-news-items-api/)
+- [Hacker News Items Lists API](https://apis.io/collections/hacker-news/open-hacker-news-lists-api/)
+- [Hacker News Items Live API](https://apis.io/collections/hacker-news/open-hacker-news-live-api/)
+- [Hacker News Items Users API](https://apis.io/collections/hacker-news/open-hacker-news-users-api/)
 
-#### Properties
+#### Security (1)
 
-- [Documentation](https://github.com/HackerNews/API)
-- [OpenAPI](https://raw.githubusercontent.com/api-evangelist/hacker-news/refs/heads/main/openapi/hacker-news-openapi.yml) — [OpenAPI Specification](https://spec.openapis.org/oas/latest.html)
-- [Rules](https://raw.githubusercontent.com/api-evangelist/hacker-news/refs/heads/main/hacker-news-rules.yml)
-- [Postman Collection](collections/hacker-news.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/hacker-news.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
+Authentication, trust centre, and vulnerability disclosure.
 
-## Common Properties
+- [Hacker News Domain Security](https://apis.io/security/hacker-news/hacker-news-domain-security/)
+
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [Hacker News Plans Pricing](https://apis.io/plans/hacker-news/hacker-news-plans-pricing/)
+
+#### Rate limits (1)
+
+Published request limits.
+
+- [Hacker News Rate Limits](https://apis.io/rate-limits/hacker-news/hacker-news-rate-limits/)
+
+#### FinOps (1)
+
+What the API costs to run, by operation.
+
+- [Hacker News Finops](https://apis.io/finops/hacker-news/hacker-news-finops/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
 
 - [Website](https://news.ycombinator.com/)
 - [Documentation](https://github.com/HackerNews/API)
-- [Guidelines](https://news.ycombinator.com/newsguidelines.html)
-- [Terms of Service](https://news.ycombinator.com/legal)
 - [Security](https://news.ycombinator.com/security.html)
-- [Portal](https://news.ycombinator.com/lists)
-- [R S S](https://news.ycombinator.com/rss)
-- [Forum](https://news.ycombinator.com/ask)
-- [Showcase](https://news.ycombinator.com/show)
-- [About](https://www.ycombinator.com/)
+- [Terms of service](https://news.ycombinator.com/legal)
 
-## Maintainers
+## API Evangelist rating
 
-**FN:** Kin Lane
-**Email:** kin@apievangelist.com
+**Kin Score 26.6** — thin · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 57.1 |
+| Contract quality | 43.5 |
+| Contract governance | 0.0 |
+| Operational transparency | 18.4 |
+| Developer ergonomics | 23.8 |
+| Access clarity | 18.4 |
+
+**Agent readiness 17.8** — agent-aware
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | yes |
+| Agentic Access | derived (partial credit) |
+| Reversibility Documented | na |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | na |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | derived (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | na |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 9.8** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/hacker-news/](https://apis.io/providers/hacker-news/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Hacker News: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/hacker-news/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
